@@ -1,0 +1,31 @@
+{
+  "name": "localaser",
+  "version": "0.9.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "NODE_ENV=development node build",
+    "build": "NODE_ENV=production node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSergey/localaser.git"
+  },
+  "keywords": [],
+  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localaser)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexSergey/localaser/issues"
+  },
+  "homepage": "https://github.com/AlexSergey/localaser",
+  "dependencies": {
+    "jed": "1.1.1",
+    "valid-types": "1.0.2"
+  },
+  "devDependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "prop-types": "15.7.2",
+    "rocket-starter": "1.0.0"
+  }
+}
