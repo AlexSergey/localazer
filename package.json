@@ -1,6 +1,6 @@
 {
-  "name": "localaser",
-  "version": "0.9.0",
+  "name": "localazer",
+  "version": "0.9.1",
   "description": "",
   "main": "dist/main.js",
   "scripts": {
@@ -9,15 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexSergey/localaser.git"
+    "url": "git+https://github.com/AlexSergey/localazer.git"
   },
-  "keywords": [],
-  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localaser)",
+  "keywords": [
+    "i18n",
+    "localization",
+    "react",
+    "react-component"
+  ],
+  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localazer)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexSergey/localaser/issues"
+    "url": "https://github.com/AlexSergey/localazer/issues"
   },
-  "homepage": "https://github.com/AlexSergey/localaser",
+  "homepage": "https://github.com/AlexSergey/localazer",
   "dependencies": {
     "jed": "1.1.1",
     "valid-types": "1.0.2"
