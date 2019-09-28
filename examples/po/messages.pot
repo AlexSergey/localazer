@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 12:55+0300\n"
+"POT-Creation-Date: 2019-09-28 09:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,20 +22,15 @@ msgid "Hello"
 msgstr ""
 
 #, javascript-format
-msgid "%d click"
-msgid_plural "%d clicks"
-msgstr[0] ""
-msgstr[1] ""
-
-#, javascript-format
 msgctxt "USER"
 msgid "Your name is %s"
 msgstr ""
 
 #, javascript-format
-msgctxt "ORGANISATION"
-msgid "Your organization is %s"
-msgstr ""
+msgid "%d click"
+msgid_plural "%d clicks"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "Sort By"
 msgstr ""

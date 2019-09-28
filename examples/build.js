@@ -1,3 +1,5 @@
 const { frontendCompiler } = require('rocket-starter');
 
-frontendCompiler();
+frontendCompiler({
+    url: './'
+});

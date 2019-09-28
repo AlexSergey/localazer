@@ -1,6 +1,6 @@
 import Jed from 'jed';
-import LocalizationObserver from './LocalizationObserver';
 import { isFunction } from 'valid-types';
+import jed from './i18n';
 
 const l = (text, context) => {
     return function () {
@@ -23,25 +23,25 @@ function translateSprintf(...args) {
 }
 
 function translateL(text, context) {
-    if (!LocalizationObserver.i18n) {
+    if (!jed.getJed()) {
         return false;
     }
     return context ?
-        LocalizationObserver.i18n.pgettext(context, text) :
-        LocalizationObserver.i18n.gettext(text);
+        jed.getJed().pgettext(context, text) :
+        jed.getJed().gettext(text);
 }
 
 function translateNl(singular, plural, amount, context) {
     if (!Number.isInteger(amount)) {
         return singular;
     }
-    if (!LocalizationObserver.i18n) {
+    if (!jed.getJed()) {
         return false;
     }
 
     return context ?
-        LocalizationObserver.i18n.npgettext(context, singular, plural, amount) :
-        LocalizationObserver.i18n.ngettext(singular, plural, amount);
+        jed.getJed().npgettext(context, singular, plural, amount) :
+        jed.getJed().ngettext(singular, plural, amount);
 }
 
 export { l, nl, sprintf };

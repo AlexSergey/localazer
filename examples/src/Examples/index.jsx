@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Localization, { LocalizationObserver, l, nl, sprintf } from '../../../src';
+import Localization, { LocalizationObserver, jed, l, nl, sprintf } from '../../../src';
+import ru from '../../json/ru.json';
 
 const LANGUAGES = {
     ru: {
@@ -26,7 +27,9 @@ export default class LocalizationExamples extends Component {
             count: 0,
             name: 'Vasya',
             active: 'en',
-            languages: {}
+            languages: {
+                ru
+            }
         }
     }
 
@@ -34,7 +37,7 @@ export default class LocalizationExamples extends Component {
         this.setState({
             active: this.state.active === 'en' ? 'ru' : 'en'
         }, () => {
-            console.log(LocalizationObserver.i18n);
+            console.log(jed.getJed());
         })
     };
 
@@ -52,7 +55,10 @@ export default class LocalizationExamples extends Component {
 
         return <LocalizationObserver active={active} languages={languages}>
             <div>
-
+                <p><a onClick={e => {
+                    e.preventDefault();
+                    this.changeLocal();
+                }} className="btn btn-primary btn-lg" href="https://github.com/AlexSergey/react-custom-scroll" role="button">Change localization</a></p>
                 <h2>Simple text example:</h2>
                 <div>
                     <Localization>{l('Hello')}</Localization>

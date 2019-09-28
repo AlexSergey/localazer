@@ -1,7 +1,7 @@
 {
   "name": "localazer",
-  "version": "0.9.1",
-  "description": "",
+  "version": "0.9.9",
+  "description": "This module can help you organize localization in your application",
   "main": "dist/main.js",
   "scripts": {
     "start": "NODE_ENV=development node build",
@@ -31,6 +31,6 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "prop-types": "15.7.2",
-    "rocket-starter": "1.0.0"
+    "rocket-starter": "1.7.0"
   }
 }

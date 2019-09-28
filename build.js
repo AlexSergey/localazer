@@ -1,6 +1,6 @@
 const { libraryCompiler } = require('rocket-starter');
 
-libraryCompiler('Localization', {}, config => {
+libraryCompiler('localazer', {}, config => {
     config.externals = [{
         react: {
             root: 'React',

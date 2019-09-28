@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Jed from 'jed';
 import { getDefault } from './utils';
 import { isFunction, isDefined, isObject, isString } from 'valid-types';
+import { active, defaultLang, languages } from './constants';
+import jed from './i18n';
 
 class LocalizationObserver extends Component {
     constructor(props) {
         super(props);
-        LocalizationObserver.i18n = new Jed(props.active);
         LocalizationObserver.components = {};
         LocalizationObserver.uid = 0;
     }
 
     changeLocalization(locale) {
-        locale = this.props.languages[locale] ? locale : this.props.default;
-        let localeData = this.props.languages[locale] ? this.props.languages[locale] : getDefault(this.props.default);
+        locale = this.props.languages[locale] ? locale : this.props.defaultLang;
+        let localeData = this.props.languages[locale] ? this.props.languages[locale] : getDefault(this.props.defaultLang);
 
-        this.updateComponents(localeData, locale);
+        this.updateComponents(localeData, this.props.languages, locale);
     }
 
     updateComponents(localeData, locale) {
@@ -25,7 +25,7 @@ class LocalizationObserver extends Component {
                 this.props.onChange(locale);
             }
 
-            LocalizationObserver.i18n.options = localeData;
+            jed.getJed().options = localeData;
 
             Object.keys(LocalizationObserver.components).forEach(uid => {
                 if (isDefined(LocalizationObserver.components[uid])) {
@@ -36,7 +36,7 @@ class LocalizationObserver extends Component {
     }
 
     componentDidMount() {
-        if (this.props.active !== this.props.default) {
+        if (this.props.active !== this.props.defaultLang) {
             this.changeLocalization(this.props.active);
         }
     }
@@ -53,14 +53,14 @@ class LocalizationObserver extends Component {
 }
 
 LocalizationObserver.defaultProps = {
-    active: 'en',
-    default: 'en',
-    languages: {}
+    active: active,
+    defaultLang: defaultLang,
+    languages: languages
 };
 
 LocalizationObserver.propTypes = {
     active: PropTypes.string,
-    default: PropTypes.string,
+    defaultLang: PropTypes.string,
     languages: PropTypes.object,
     onChange: PropTypes.func
 };
