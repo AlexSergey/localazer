@@ -1,6 +1,6 @@
 /*!
  * banner:
- * localazer: 0.9.9
+ * localazer: 0.9.9-rc.1
  * Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localazer)
  * This module can help you organize localization in your application
  * MIT

@@ -1,8 +1,8 @@
 {
   "name": "localazer",
-  "version": "0.9.9",
+  "version": "0.9.9-rc.1",
   "description": "This module can help you organize localization in your application",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "NODE_ENV=development node build",
     "build": "NODE_ENV=production node build"
