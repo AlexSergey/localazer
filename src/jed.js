@@ -7,11 +7,15 @@ const l = (text, context) => {
         return translateL(text, context);
     };
 };
+l.isLocalazer = true;
+
 const nl = (singular, plural, amount, context) => {
     return function () {
         return translateNl(singular, plural, amount, context);
     };
 };
+nl.isLocalazer = true;
+
 const sprintf = (...args) => {
     return function () {
         return translateSprintf.apply(null, args.map(item => (isFunction(item) ? item() : item)));
