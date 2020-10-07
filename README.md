@@ -1,3 +1,5 @@
+# This module has been deprecated. Please use [Rockpack](https://github.com/AlexSergey/rockpack)
+
 <div align="center">
     <a href="http://www.natrube.net/localazer/index.html">
         <img src="http://www.natrube.net/localazer/assets/logo.png" alt="This module can help you organize localization in your application" />
