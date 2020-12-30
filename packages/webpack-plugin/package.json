@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/AlexSergey/localazer.git"
   },
-  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/rockpack)",
+  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localazer)",
   "license": "MIT",
   "homepage": "https://www.rockpack.io/localization-true-way/",
   "bugs": {
