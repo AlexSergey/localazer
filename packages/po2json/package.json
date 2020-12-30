@@ -1,6 +1,28 @@
 {
   "name": "@localazer/po2json",
   "version": "3.0.0",
+  "description": "This module can help you organize localization in your React application",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSergey/localazer.git"
+  },
+  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/rockpack)",
+  "license": "MIT",
+  "homepage": "https://www.rockpack.io/localization-true-way/",
+  "bugs": {
+    "url": "https://github.com/AlexSergey/localazer/issues"
+  },
+  "keywords": [
+    "jed",
+    "localization",
+    "internationalization",
+    "l10n",
+    "i18n",
+    "react",
+    "react-component"
+  ],
+  "private": false,
   "dependencies": {
     "colors": "1.4.0",
     "po2json": "0.4.5",
