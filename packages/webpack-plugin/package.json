@@ -1,0 +1,14 @@
+{
+  "name": "@localazer/webpack-plugin",
+  "version": "3.0.0",
+  "dependencies": {
+    "@babel/parser": "7.12.11",
+    "@babel/traverse": "7.12.10",
+    "tempy": "1.0.0",
+    "mkdirp": "1.0.4",
+    "deep-extend": "0.6.0",
+    "async": "3.2.0",
+    "loader-utils": "2.0.0",
+    "schema-utils": "3.0.0"
+  }
+}

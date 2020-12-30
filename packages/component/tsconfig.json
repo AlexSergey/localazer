@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "jsx": "react",
+    "declaration": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "typeRoots": [
+      "../../node_modules/@types",
+      "node_modules/@types"
+    ]
+  },
+  "exclude":  [
+    "./node_modules/**/*",
+    "./src/*.test.tsx"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}

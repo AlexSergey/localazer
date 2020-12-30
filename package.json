@@ -1,36 +1,26 @@
 {
-  "name": "localazer",
-  "version": "0.9.9-rc.2",
-  "description": "This module can help you organize localization in your application",
-  "main": "dist/index.js",
-  "scripts": {
-    "start": "NODE_ENV=development node build",
-    "build": "NODE_ENV=production node build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexSergey/localazer.git"
-  },
-  "keywords": [
-    "i18n",
-    "localization",
-    "react",
-    "react-component"
-  ],
-  "author": "Aleksandrov Sergey <gooddev.sergey@gmail.com> (https://github.com/AlexSergey/localazer)",
+  "name": "rockpack",
+  "version": "2.0.0",
+  "private": true,
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AlexSergey/localazer/issues"
+  "workspaces": [
+    "example",
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "lerna run lint",
+    "typing": "lerna run typing",
+    "production": "lerna run production",
+    "test": "lerna run test --stream"
   },
-  "homepage": "https://github.com/AlexSergey/localazer",
-  "dependencies": {
-    "jed": "1.1.1",
-    "valid-types": "1.0.2"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run typing",
+      "pre-push": "npm run lint && npm run typing && npm test"
+    }
   },
   "devDependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "prop-types": "15.7.2",
-    "rocket-starter": "1.7.0"
+    "lerna": "3.22.1",
+    "husky": "4.2.5"
   }
 }
