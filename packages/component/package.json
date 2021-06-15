@@ -35,7 +35,7 @@
   "private": false,
   "dependencies": {
     "jed": "1.1.1",
-    "valid-types": "2.0.3"
+    "valid-types": "^2.0.5"
   },
   "devDependencies": {
     "@rockpack/codestyle": "1.8.0",
