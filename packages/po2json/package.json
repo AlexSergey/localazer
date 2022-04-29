@@ -27,7 +27,7 @@
     "colors": "1.4.0",
     "po2json": "0.4.5",
     "mkdirp": "1.0.4",
-    "async": "3.2.0",
+    "async": "3.2.2",
     "valid-types": "2.0.5",
     "deep-extend": "0.6.0"
   }
